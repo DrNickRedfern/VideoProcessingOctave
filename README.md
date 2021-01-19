@@ -10,16 +10,16 @@ He has also provoided a Matlab script [VideoProcessing.m](https://github.com/det
 You can find the details of how to do this on the [detsutut/chroma](https://github.com/detsutut/chroma) repository.
 
 ## Octave instead of Matlab
-Matlab is *not* a cheap piece of software and is possibly not accessible by many users due to the prohibitive cost.
+Matlab is *not* a cheap piece of software and is possibly not accessible to many users due to the prohibitive cost.
 
 Fortunately [Octave](https://www.gnu.org/software/octave/index) is an open source alternative to Matlab that will run .m files, such as that described on the chroma repository with *very* minimal changes.
 
-Therefore, I have adapted the original @detsutut's VideoProcessing.m file to run in Ocatve and which is available on this repository: VideoProcessingOctave.m.
+Therefore, I have adapted the original @detsutut's VideoProcessing.m file to run in Ocatve and it is available on this repository: VideoProcessingOctave.m.
 
 To run this file you will need to have the [video](https://wiki.octave.org/Video_package) package for Octave installed. Installation details are available on the video package website. 
 
-Load the video package into the environment, at the Octave prompt enter `pkg load video` before running VideoProcessingOctave.m.
+Load the video package into the environment, at the Octave prompt enter `pkg load video`, before running VideoProcessingOctave.m.
 
 The difference between VideoProcessing.m and VideoProcessingOctave.m is not even a single letter: in line 19 of the Matlab script, `mov.duration` must be changed to `mov.Duration`. For those of you still struggling to see the difference, the video package requires that *duration* has a capital letter unlike it's Matlab counterpart. 
 
-Like I said, not even a single letter's difference.
+Like I said, not even a single letter's difference but both scripts will perform the same task.
